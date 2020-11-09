@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\năm 4\\PhoneWeb\\PhoneWeb.csproj": {}
+    "C:\\Users\\Admin\\Documents\\GitHub\\demoupgithub\\PhoneWeb.csproj": {}
   },
   "projects": {
-    "D:\\năm 4\\PhoneWeb\\PhoneWeb.csproj": {
+    "C:\\Users\\Admin\\Documents\\GitHub\\demoupgithub\\PhoneWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\năm 4\\PhoneWeb\\PhoneWeb.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\demoupgithub\\PhoneWeb.csproj",
         "projectName": "PhoneWeb",
-        "projectPath": "D:\\năm 4\\PhoneWeb\\PhoneWeb.csproj",
+        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\demoupgithub\\PhoneWeb.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\năm 4\\PhoneWeb\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\demoupgithub\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
