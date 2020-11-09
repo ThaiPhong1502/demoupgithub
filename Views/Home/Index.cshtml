@@ -1,0 +1,171 @@
+﻿@model IEnumerable<PhoneWeb.Models.Domain.Product>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<!------------------------------------------ Carousel  ------------------------------------------>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="~/picture/show2.png" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5></h5><p></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="~/picture/show3.png" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5></h5><p></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="~/picture/show4.png" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5></h5><p></p>
+            </div>
+        </div>
+
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<br />
+<!------------------------------------------ Body Page ------------------------------------------>
+<div class="row">
+    <!-- Danh muc san pham -->
+    <aside class="col-md-3">
+        <div class="card">
+            <article class="card-group-item">
+                <header class="card-header bg-dark"><h6 class="title text-white">DANH MỤC SẢN PHẨM</h6></header>
+                <div class="filter-content">
+                    <div class="list-group list-group-flush">
+                        <a id="transitionDMSP" asp-controller="ProductList" asp-action="ListIphone" class="list-group-item ">
+                            <i style="padding-right:5px"><img style="width:50px; height:50px" src="~/images/a.png" /> </i> ÁO THUN NGẮN TAY
+                        </a>
+                        <a id="transitionDMSP" asp-controller="ProductList" asp-action="ListSamsung" class="list-group-item">
+                            <i style="padding-right:5px"><img style="width:40px; height:50px" src="~/images/b.jpg" /></i>  ÁO THUN DÀI TAY
+                        </a>
+                        <a id="transitionDMSP" asp-controller="ProductList" asp-action="ListVsmart" class="list-group-item">
+                            <i style="padding-right:5px"><img style="width:50px; height:50px" src="~/images/c.jpg" /></i>  ÁO THUN CỔ
+                        </a>
+                    </div>  <!-- list-group .// -->
+                </div>
+            </article> <!-- card-group-item.// -->
+        </div> <!-- card.// -->
+    </aside>
+    <!-- San pham giam gia--->
+    <aside class="col-md-9">
+        <header class="card-header bg-dark"><h6 class="title text-white">GIẢM GIÁ SỐC</h6></header>
+        <div class="container">
+            <div class="row" id="gradient">
+
+                <div id="SPNBCarousel" class="carousel slide  " data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <!-- ngắn -->
+                                <div class="item col-md-4 text-md-center">
+                                    <div class="container">
+                                        <br />
+                                        <img class="card-img-top" style="width:200px; height:200px;" src="~/images/1.jpg" alt="">
+                                        <br />
+                                        <div class="container">
+                                            <div><b> Áo Thun TN R Thiết Kế BD-A93 </b></div>
+                                            <a asp-controller="DetailsProduct" asp-action="DetailsIphone11" class="text-muted"><i class="text-info">Chi tiết sản phẩm</i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- dài -->
+                                <div class="item col-md-4 text-md-center">
+                                    <div class="container">
+                                        <br />
+                                        <img class="card-img-top" style="width:200px; height:200px;" src="~/images/2.jpg" alt="">
+                                        <br />
+                                        <div class="container">
+                                            <div><b> Áo Thun TN TC Thiết Kế B1CF06 </b></div>
+                                            <a asp-controller="DetailsProduct" asp-action="DetailsVsmartLive" class="text-muted"><i class="text-info">Chi tiết sản phẩm</i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cổ -->
+                                <div class="item col-md-4 text-md-center">
+                                    <div class="container">
+                                        <br />
+                                        <img class="card-img-top" style="width:200px; height:200px;" src="~/images/3.jpg" alt="">
+                                        <br />
+                                        <div class="container">
+                                            <div><b> Áo Thun Cổ Trụ TC Đơn Giản B2R01 </b></div>
+                                            <a asp-controller="DetailsProduct" asp-action="DetailsS20ultra" class="text-muted"><i class="text-info">Chi tiết sản phẩm</i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#SPNBCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#SPNBCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </aside>
+
+</div>
+<!-- Picture NOKIA--->
+<div class="row">
+    <img class="card-img-top" src="~/images/black.jpg" style="padding-top:13px" height="320" alt="">
+</div>
+
+<br />
+<!-- San pham noi bat--->
+<div class="row">
+    <div class="col-md-12 ">
+        <header class="card-header bg-dark"><h6 class="title text-white">SẢN PHẨM NỔI BẬT</h6></header>
+        <div class="container">
+            <br />
+            <div class="row text-center">
+                @foreach (var item in Model)
+                {
+                    <div class="item col-md-4" style="padding-top:20px">
+                        <div class="card">
+                            <img class="card-img-top" src="~/images/@item.ProductImage" style=" height:350px;width:auto;padding-top:15px" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title"> @item.ProductName </h4>
+                                <h5 style="color:red"> @item.ProductPrice VNĐ</h5>
+                            </div>
+                            <div class="card-footer">
+                                <a asp-controller="DetailsProduct" asp-action="Details" asp-route-id="@item.ProductId" class="text-muted"><i class="btn btn-primary text-white">Chi tiết</i></a> |
+                                <a asp-controller="Cart" asp-action="Buy" asp-route-id="@item.ProductId" class="btn btn-info">  Mua ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <br />
+        </div>
+        <br />
+    </div>
+</div>
+
+<!-- Picture s20--->
+<div class="row">
+    <img class="card-img-top" src="~/images/sale.jpg" style="padding-top:13px" height="350" alt="">
+</div>
+
+
