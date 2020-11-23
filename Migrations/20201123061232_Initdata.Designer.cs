@@ -10,8 +10,8 @@ using PhoneWeb.Data;
 namespace PhoneWeb.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20200718072748_InitData")]
-    partial class InitData
+    [Migration("20201123061232_Initdata")]
+    partial class Initdata
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -50,15 +50,15 @@ namespace PhoneWeb.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "12a9dbbd-faa7-4c31-9c4b-433bdaed8dd2",
-                            ConcurrencyStamp = "8bbd268a-826a-43d0-8ad1-1c078e512673",
+                            Id = "a3ca0bdb-7765-4475-b53b-7637ca962ba7",
+                            ConcurrencyStamp = "60c63dea-418f-4922-9847-893655f2d2ac",
                             Name = "Visitor",
                             NormalizedName = "VISITOR"
                         },
                         new
                         {
-                            Id = "394a43f2-7a8f-4134-9244-cfe268d1d3ea",
-                            ConcurrencyStamp = "b7866438-eea5-410b-acfa-1288348b30e6",
+                            Id = "98fe209c-b90e-4531-a1b8-513dee3c3c6d",
+                            ConcurrencyStamp = "b16c84e5-f1c6-4805-bcf6-2ea092174553",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         });
@@ -187,27 +187,17 @@ namespace PhoneWeb.Migrations
                         new
                         {
                             CategoryId = 1,
-                            CategoryName = "Iphone"
+                            CategoryName = "Áo Thun Ngắn Tay"
                         },
                         new
                         {
                             CategoryId = 2,
-                            CategoryName = "SamSung"
+                            CategoryName = "Áo Thun Dài Tay"
                         },
                         new
                         {
                             CategoryId = 3,
-                            CategoryName = "Vsmart"
-                        },
-                        new
-                        {
-                            CategoryId = 4,
-                            CategoryName = "Nokia"
-                        },
-                        new
-                        {
-                            CategoryId = 5,
-                            CategoryName = "Oppo"
+                            CategoryName = "Áo Thun Cổ"
                         });
                 });
 
@@ -307,253 +297,165 @@ namespace PhoneWeb.Migrations
                         {
                             ProductId = 1,
                             CategoryId = 1,
-                            CreateDate = new DateTime(2020, 7, 18, 14, 27, 48, 599, DateTimeKind.Local).AddTicks(3597),
-                            Descriptions = "Công nghệ màn hình: OLED, Độ phân giải: 1242 x 2688 Pixels, Màn hình rộng: 6.5 inch, Mặt kính cảm ứng: Kính cường lực oleophobic(ion cường lực), Camera sau: Độ phân giải 3 camera 12 MP, Camera trước: 12 MP, Ram: 4GB, Bộ nhớ trong: 64GB, Không hổ trợ bộ nhớ ngoàiDung lượng pin 3969 mAh",
-                            ProductImage = "ip11.jpg",
-                            ProductName = "Iphone11",
-                            ProductPrice = 30000000.0,
+                            CreateDate = new DateTime(2020, 11, 23, 13, 12, 31, 701, DateTimeKind.Local).AddTicks(8700),
+                            Descriptions = "Chất liệu: Cotton 2 chiều, Thành phần: 100% Cotton,  Co dãn 2 chiều, Thấm hút mồ hôi tốt mang lại cảm giác thoáng mái, Họa tiết: ép Foil ",
+                            ProductImage = "1.jpg",
+                            ProductName = "Áo Thun TN R Thiết Kế BD-A93",
+                            ProductPrice = 300000.0,
                             ProductQuantity = 100
                         },
                         new
                         {
                             ProductId = 2,
                             CategoryId = 1,
-                            CreateDate = new DateTime(2020, 7, 18, 14, 27, 48, 600, DateTimeKind.Local).AddTicks(1287),
-                            Descriptions = "Công nghệ màn hình: OLED, Độ phân giải: 1125 x 2436 Pixels, Màn hình rộng: 5.8 inch, Mặt kính cảm ứng: Kính cường lực oleophobic(ion cường lực), Camera sau: Chính 12 MP & Phụ 12 MP, Camera trước: 7 MP, Ram: 3GB, Bộ nhớ trong: 64GB, Không hổ trợ bộ nhớ ngoàiDung lượng pin 2716 mAh",
-                            ProductImage = "ipx.jpg",
-                            ProductName = "IphoneX",
-                            ProductPrice = 20000000.0,
+                            CreateDate = new DateTime(2020, 11, 23, 13, 12, 31, 703, DateTimeKind.Local).AddTicks(3198),
+                            Descriptions = "Chất liệu: Cotton 2 chiều, Thành phần: 100% Cotton, Co dãn 2 chiều, Thấm hút mồ hôi tốt mang lại cảm giác thoáng mát ",
+                            ProductImage = "2.jpg",
+                            ProductName = "Áo Thun TN TC Đơn Giản BN01",
+                            ProductPrice = 300000.0,
                             ProductQuantity = 100
                         },
                         new
                         {
                             ProductId = 3,
                             CategoryId = 1,
-                            CreateDate = new DateTime(2020, 7, 18, 14, 27, 48, 600, DateTimeKind.Local).AddTicks(1315),
-                            Descriptions = "Công nghệ màn hình: LED-backlit IPS LCD, Độ phân giải: Full HD (1080 x 1920 Pixels), Màn hình rộng: 5.5 inch, Mặt kính cảm ứng: Kính cường lực oleophobic(ion cường lực), Camera sau: Chính 12 MP & Phụ 12 MP, Camera trước: 7 MP, Ram: 3GB, Bộ nhớ trong: 64GB, Không hổ trợ bộ nhớ ngoàiDung lượng pin 2691 mAh",
-                            ProductImage = "ip8.jpg",
-                            ProductName = "Iphone8",
-                            ProductPrice = 14000000.0,
+                            CreateDate = new DateTime(2020, 11, 23, 13, 12, 31, 703, DateTimeKind.Local).AddTicks(3272),
+                            Descriptions = "Chất liệu: Cotton 4 Chiều, Thành phần: 95% cotton 5% Spandex, Co giãn tốt, Độ bền cao ",
+                            ProductImage = "3.jpg",
+                            ProductName = "Áo Thun Cổ Trụ TC Đơn Giản J01",
+                            ProductPrice = 300000.0,
                             ProductQuantity = 100
                         },
                         new
                         {
                             ProductId = 4,
-                            CategoryId = 2,
-                            CreateDate = new DateTime(2020, 7, 18, 14, 27, 48, 600, DateTimeKind.Local).AddTicks(1318),
-                            Descriptions = "Công nghệ màn hình: Dynamic AMOLED 2X, Độ phân giải: 2K+ (1440 x 3200 Pixels), Màn hình rộng: 6.9 inch, Mặt kính cảm ứng: 	Kính cường lực Corning Gorilla Glass 6, Camera sau: Chính 108 MP & phụ 48 MP, 12 MP, TOF 3D, Camera trước: 40 MP, Ram: 12 GB, Bộ nhớ trong: 128GB, Hổ trợ bộ nhớ ngoài tối đa 1TBDung lượng pin 5000 mAh",
-                            ProductImage = "s20ultra.png",
-                            ProductName = "SamSung Galaxy S20 Ultra",
-                            ProductPrice = 29990000.0,
+                            CategoryId = 1,
+                            CreateDate = new DateTime(2020, 11, 23, 13, 12, 31, 703, DateTimeKind.Local).AddTicks(3276),
+                            Descriptions = "Chất liệu: Cotton 2 chiều, Thành phần: 100% Cotton, Co dãn 2 chiều, Thấm hút mồ hôi tốt mang lại cảm giác thoáng mái, Họa tiết: in trame, in dẻo ",
+                            ProductImage = "4.jpg",
+                            ProductName = "Áo Thun TN R Thiết Kế BO01",
+                            ProductPrice = 300000.0,
                             ProductQuantity = 100
                         },
                         new
                         {
                             ProductId = 5,
-                            CategoryId = 3,
-                            CreateDate = new DateTime(2020, 7, 18, 14, 27, 48, 600, DateTimeKind.Local).AddTicks(1320),
-                            Descriptions = "Công nghệ màn hình: IPS LCD, Độ phân giải: HD+ (720 x 1600 Pixels), Màn hình rộng: 6.5 inch, Mặt kính cảm ứng: 	Mặt kính cong 2.5D, Camera sau: Chính 13 MP & Phụ 8 MP, 2 MP, Camera trước: 8 MP, Ram: 4 GB, Bộ nhớ trong: 64 GB, Hổ trợ bộ nhớ ngoài tối đa 64GBDung lượng pin 5000 mAh",
-                            ProductImage = "vsmartjoy3.jpg",
-                            ProductName = "Vsmart Joy 3",
-                            ProductPrice = 4000000.0,
+                            CategoryId = 1,
+                            CreateDate = new DateTime(2020, 11, 23, 13, 12, 31, 703, DateTimeKind.Local).AddTicks(3281),
+                            Descriptions = "Chất liệu: Cotton 2 chiều, Thành phần: 100% Cotton, Co dãn 2 chiều, Thấm hút mồ hôi tốt mang lại cảm giác thoáng mái, Họa tiết: in trame ",
+                            ProductImage = "5.jpg",
+                            ProductName = "Áo Thun TN R Thiết Kế BD-A90",
+                            ProductPrice = 300000.0,
                             ProductQuantity = 100
                         },
                         new
                         {
                             ProductId = 6,
-                            CategoryId = 4,
-                            CreateDate = new DateTime(2020, 7, 18, 14, 27, 48, 600, DateTimeKind.Local).AddTicks(1322),
-                            Descriptions = "Nokia 1280 - Legendary, Nghe, Gọi, Nhắn tin, Thay thế đồng hồ báo thức, Chống nước, Chống sốc",
-                            ProductImage = "nokia1280.jpg",
-                            ProductName = "Nokia 1280",
-                            ProductPrice = 200000.0,
+                            CategoryId = 2,
+                            CreateDate = new DateTime(2020, 11, 23, 13, 12, 31, 703, DateTimeKind.Local).AddTicks(3283),
+                            Descriptions = "Chất liệu: Cotton 2 chiều, Thành phần: 100% Cotton, Co dãn 2 chiều, Thấm hút mồ hôi tốt mang lại cảm giác thoáng mát ",
+                            ProductImage = "6.jpg",
+                            ProductName = "Áo Thun TN TC Thiết Kế B1CF06",
+                            ProductPrice = 250000.0,
                             ProductQuantity = 100
                         },
                         new
                         {
                             ProductId = 7,
-                            CategoryId = 3,
-                            CreateDate = new DateTime(2020, 7, 18, 14, 27, 48, 600, DateTimeKind.Local).AddTicks(1324),
-                            Descriptions = "Công nghệ màn hình: AMOLED, Độ phân giải: Full HD+ (1080 x 2232 Pixels), Màn hình rộng: 6.2 inch, Mặt kính cảm ứng: Mặt kính cong 2.5D, Camera sau: Chính 48 MP & Phụ 8 MP, 5 MP, Camera trước: 20 MP, Ram: 6 GB, Bộ nhớ trong: 64 GB, Không hổ trợ bộ nhớ ngoài Dung lượng pin 4000 mAh",
-                            ProductImage = "vslive.jpg",
-                            ProductName = "Vsmart Live",
-                            ProductPrice = 7000000.0,
+                            CategoryId = 2,
+                            CreateDate = new DateTime(2020, 11, 23, 13, 12, 31, 703, DateTimeKind.Local).AddTicks(3286),
+                            Descriptions = "Chất liệu: Cotton 2 chiều, Thành phần: 100% Cotton,  Co dãn 2 chiều, Thấm hút mồ hôi tốt mang lại cảm giác thoáng mái, Họa tiết: ép Foil ",
+                            ProductImage = "7.jpg",
+                            ProductName = "Áo Thun TD R Thiết Kế A02",
+                            ProductPrice = 250000.0,
                             ProductQuantity = 100
                         },
                         new
                         {
                             ProductId = 8,
                             CategoryId = 2,
-                            CreateDate = new DateTime(2020, 7, 18, 14, 27, 48, 600, DateTimeKind.Local).AddTicks(1326),
-                            Descriptions = "Công nghệ màn hình: Super AMOLED, Độ phân giải: Full HD+ (1080 x 2400 Pixels), Màn hình rộng: 6.7 inch, Mặt kính cảm ứng: Kính cường lực Corning Gorilla Glass 3, Camera sau: Chính 12 MP & Phụ 12 MP, 12 MP, Camera trước: 32 MP, Ram: 8 GB, Bộ nhớ trong: 128 GB, Hổ trợ bộ nhớ ngoài tối đa 512 GB Dung lượng pin 4500 mAh",
-                            ProductImage = "ssnote10lite.png",
-                            ProductName = "Samsung Galaxy Note 10 Lite",
-                            ProductPrice = 13890000.0,
+                            CreateDate = new DateTime(2020, 11, 23, 13, 12, 31, 703, DateTimeKind.Local).AddTicks(3288),
+                            Descriptions = "Chất liệu: Cotton 2 chiều, Thành phần: 100% Cotton, Co dãn 2 chiều, Thấm hút mồ hôi tốt mang lại cảm giác thoáng mát ",
+                            ProductImage = "8.jpg",
+                            ProductName = "Áo Thun TD R Thiết Kế B02",
+                            ProductPrice = 250000.0,
                             ProductQuantity = 100
                         },
                         new
                         {
                             ProductId = 9,
                             CategoryId = 2,
-                            CreateDate = new DateTime(2020, 7, 18, 14, 27, 48, 600, DateTimeKind.Local).AddTicks(1327),
-                            Descriptions = "Công nghệ màn hình: PLS TFT LCD, Độ phân giải: 	Full HD+ (1080 x 2340 Pixels), Màn hình rộng: 6.3 inch, Mặt kính cảm ứng: 	Mặt kính cong 2.5D, Camera sau: 	Chính 13 MP & Phụ 5 MP, Camera trước: 8 MP, Ram: 3 GB, Bộ nhớ trong: 31 GB, Hổ trợ bộ nhớ ngoài tối đa 512 GB Dung lượng pin 4000 mAh",
-                            ProductImage = "ssM20.png",
-                            ProductName = "Samsung Galaxy M20",
-                            ProductPrice = 5490000.0,
+                            CreateDate = new DateTime(2020, 11, 23, 13, 12, 31, 703, DateTimeKind.Local).AddTicks(3290),
+                            Descriptions = "COUPLE TAY DÀI, Diện áo thun couple đã trở thành xu hướng của giới trẻ hiện đại, Đặc biệt áo thun tay dài raplan, màu sắc tươi mới, Thiết kế Unisex, dễ dàng mix với nhiều trang phục khác nhau, Chất liệu cotton 2 chiều, thoáng mát, bề mặt mịn đẹp ",
+                            ProductImage = "9.jpg",
+                            ProductName = "Áo Thun TD TC Đơn Giản B4AA01",
+                            ProductPrice = 250000.0,
                             ProductQuantity = 100
                         },
                         new
                         {
                             ProductId = 10,
                             CategoryId = 2,
-                            CreateDate = new DateTime(2020, 7, 18, 14, 27, 48, 600, DateTimeKind.Local).AddTicks(1329),
-                            Descriptions = "Công nghệ màn hình: Super AMOLED, Độ phân giải: 	Full HD+ (1080 x 2400 Pixels), Màn hình rộng: 6.7 inch, Mặt kính cảm ứng: 	Kính cường lực, Camera sau: Chính 64 MP & Phụ 12 MP, 5 MP, 5 MP, Camera trước: 32 MP, Ram: 8 GB, Bộ nhớ trong: 128 GB, Hổ trợ bộ nhớ ngoài tối đa 512 GB Dung lượng pin 5000 mAh",
-                            ProductImage = "ssA71.png",
+                            CreateDate = new DateTime(2020, 11, 23, 13, 12, 31, 703, DateTimeKind.Local).AddTicks(3293),
+                            Descriptions = "COUPLE TAY DÀI, Diện áo thun couple đã trở thành xu hướng của giới trẻ hiện đại, Đặc biệt áo thun tay dài raplan, màu sắc tươi mới, Thiết kế Unisex, dễ dàng mix với nhiều trang phục khác nhau, Chất liệu cotton 2 chiều, thoáng mát, bề mặt mịn đẹp ",
+                            ProductImage = "10.jpg",
                             ProductName = "Samsung Galaxy A71",
-                            ProductPrice = 10590000.0,
+                            ProductPrice = 250000.0,
                             ProductQuantity = 100
                         },
                         new
                         {
                             ProductId = 11,
-                            CategoryId = 4,
-                            CreateDate = new DateTime(2020, 7, 18, 14, 27, 48, 600, DateTimeKind.Local).AddTicks(1331),
-                            Descriptions = "Công nghệ màn hình: IPS LCD, Độ phân giải: 	Full HD+ (1080 x 2340 Pixels), Màn hình rộng: 6.3 inch, Mặt kính cảm ứng: 	Kính cường lực Corning Gorilla Glass 3, Camera sau: Chính 48 MP & Phụ 8 MP, 5 MP, Camera trước: 20 MP, Ram: 4 GB, Bộ nhớ trong: 64 GB, Hổ trợ bộ nhớ ngoài tối đa 400 GB Dung lượng pin 4500 mAh",
-                            ProductImage = "nokia72.png",
-                            ProductName = "Nokia 7.2",
-                            ProductPrice = 6190000.0,
+                            CategoryId = 3,
+                            CreateDate = new DateTime(2020, 11, 23, 13, 12, 31, 703, DateTimeKind.Local).AddTicks(3297),
+                            Descriptions = "COUPLE TAY DÀI, Diện áo thun couple đã trở thành xu hướng của giới trẻ hiện đại, Đặc biệt áo thun tay dài raplan, màu sắc tươi mới, Thiết kế Unisex, dễ dàng mix với nhiều trang phục khác nhau, Chất liệu cotton 2 chiều, thoáng mát, bề mặt mịn đẹp ",
+                            ProductImage = "11.jpg",
+                            ProductName = "Áo Thun Cổ Trụ TC Đơn Giản B2R01",
+                            ProductPrice = 250000.0,
                             ProductQuantity = 100
                         },
                         new
                         {
                             ProductId = 12,
-                            CategoryId = 2,
-                            CreateDate = new DateTime(2020, 7, 18, 14, 27, 48, 600, DateTimeKind.Local).AddTicks(1333),
-                            Descriptions = "Công nghệ màn hình: Super AMOLED, Độ phân giải: 	Full HD+ (1080 x 2340 Pixels), Màn hình rộng: 6.4 inch, Mặt kính cảm ứng: 	Mặt kính cong 2.5D, Camera sau: Chính 48 MP & Phụ 8 MP, 5 MP, Camera trước: 32 MP, Ram: 4 GB, Bộ nhớ trong: 64 GB, Hổ trợ bộ nhớ ngoài tối đa 512 GB Dung lượng pin 4000 mAh",
-                            ProductImage = "ssA50s.png",
-                            ProductName = "Samsung Galaxy A50s",
-                            ProductPrice = 6990000.0,
+                            CategoryId = 3,
+                            CreateDate = new DateTime(2020, 11, 23, 13, 12, 31, 703, DateTimeKind.Local).AddTicks(3300),
+                            Descriptions = "COUPLE TAY DÀI, Diện áo thun couple đã trở thành xu hướng của giới trẻ hiện đại, Đặc biệt áo thun tay dài raplan, màu sắc tươi mới, Thiết kế Unisex, dễ dàng mix với nhiều trang phục khác nhau, Chất liệu cotton 2 chiều, thoáng mát, bề mặt mịn đẹp ",
+                            ProductImage = "12.jpg",
+                            ProductName = "Áo Thun Cổ Trụ TC Thiết Kế B2R04",
+                            ProductPrice = 250000.0,
                             ProductQuantity = 100
                         },
                         new
                         {
                             ProductId = 13,
                             CategoryId = 3,
-                            CreateDate = new DateTime(2020, 7, 18, 14, 27, 48, 600, DateTimeKind.Local).AddTicks(1334),
-                            Descriptions = "Công nghệ màn hình: AMOLED, Độ phân giải: Full HD+ (1080 x 2340 Pixels), Màn hình rộng: 6.39 inch, Mặt kính cảm ứng: Mặt kính cong 2.5D, Camera sau: Chính 48 MP & Phụ 8 MP, 5 MP, Camera trước: 16 MP, Ram: 6 GB, Bộ nhớ trong: 64 GB, Hổ trợ bộ nhớ ngoài tối đa 256GB Dung lượng pin 4020 mAh",
-                            ProductImage = "vsActive3.jpg",
-                            ProductName = "Vsmart Active 3",
-                            ProductPrice = 3790000.0,
+                            CreateDate = new DateTime(2020, 11, 23, 13, 12, 31, 703, DateTimeKind.Local).AddTicks(3302),
+                            Descriptions = "COUPLE TAY DÀI, Diện áo thun couple đã trở thành xu hướng của giới trẻ hiện đại, Đặc biệt áo thun tay dài raplan, màu sắc tươi mới, Thiết kế Unisex, dễ dàng mix với nhiều trang phục khác nhau, Chất liệu cotton 2 chiều, thoáng mát, bề mặt mịn đẹp ",
+                            ProductImage = "13.jpg",
+                            ProductName = "Áo Thun Cổ Trụ TC Thiết Kế B04",
+                            ProductPrice = 250000.0,
                             ProductQuantity = 100
                         },
                         new
                         {
                             ProductId = 14,
                             CategoryId = 3,
-                            CreateDate = new DateTime(2020, 7, 18, 14, 27, 48, 600, DateTimeKind.Local).AddTicks(1336),
-                            Descriptions = "Công nghệ màn hình: IPS LCD, Độ phân giải: HD+ (720 x 1520 Pixels), Màn hình rộng: 5.7 inch, Mặt kính cảm ứng: Mặt kính cong 2.5D, Camera sau: Chính 8 MP & Phụ 2 MP, Camera trước: 5 MP, Ram: 2 GB, Bộ nhớ trong: 16 GB, Hổ trợ bộ nhớ ngoài tối đa 256GB Dung lượng pin 3000 mAh",
-                            ProductImage = "vsStar.jpg",
-                            ProductName = "Vsmart Star",
-                            ProductPrice = 1390000.0,
+                            CreateDate = new DateTime(2020, 11, 23, 13, 12, 31, 703, DateTimeKind.Local).AddTicks(3304),
+                            Descriptions = "COUPLE TAY DÀI, Diện áo thun couple đã trở thành xu hướng của giới trẻ hiện đại, Đặc biệt áo thun tay dài raplan, màu sắc tươi mới, Thiết kế Unisex, dễ dàng mix với nhiều trang phục khác nhau, Chất liệu cotton 2 chiều, thoáng mát, bề mặt mịn đẹp ",
+                            ProductImage = "14.jpg",
+                            ProductName = "Áo Thun Cổ Trụ TC Thiết Kế B1Q02",
+                            ProductPrice = 250000.0,
                             ProductQuantity = 100
                         },
                         new
                         {
                             ProductId = 15,
                             CategoryId = 3,
-                            CreateDate = new DateTime(2020, 7, 18, 14, 27, 48, 600, DateTimeKind.Local).AddTicks(1337),
-                            Descriptions = "Công nghệ màn hình: IPS LCD, Độ phân giải: HD+ (720 x 1440 Pixels), Màn hình rộng: 6.0 inch, Mặt kính cảm ứng: Mặt kính cong 2.5D, Camera sau: Chính 8 MP, Camera trước: 5 MP, Ram: 2 GB, Bộ nhớ trong: 16 GB, Hổ trợ bộ nhớ ngoài tối đa 64GB Dung lượng pin 3000 mAh",
-                            ProductImage = "vsBee.jpg",
-                            ProductName = "Vsmart Bee",
-                            ProductPrice = 1000000.0,
-                            ProductQuantity = 100
-                        },
-                        new
-                        {
-                            ProductId = 16,
-                            CategoryId = 5,
-                            CreateDate = new DateTime(2020, 7, 18, 14, 27, 48, 600, DateTimeKind.Local).AddTicks(1338),
-                            Descriptions = "Công nghệ màn hình: AMOLED, Độ phân giải: Full HD+ (1080 x 2400 Pixels), Màn hình rộng: 6.4 inch, Mặt kính cảm ứng: Kính cường lực Corning Gorilla Glass 5, Camera sau: Chính 48 MP & Phụ 13 MP, 8 MP, 2 MP, Camera trước: 44 MP, Ram: 8 GB, Bộ nhớ trong: 128 GB, Hổ trợ bộ nhớ ngoài tối đa 256GB Dung lượng pin 4025 mAh",
-                            ProductImage = "oppoReno3.png",
-                            ProductName = "OPPO Reno3",
-                            ProductPrice = 8490000.0,
-                            ProductQuantity = 100
-                        },
-                        new
-                        {
-                            ProductId = 17,
-                            CategoryId = 5,
-                            CreateDate = new DateTime(2020, 7, 18, 14, 27, 48, 600, DateTimeKind.Local).AddTicks(1340),
-                            Descriptions = "Công nghệ màn hình: AMOLED, Độ phân giải: Full HD+ (1080 x 2400 Pixels), Màn hình rộng: 6.4 inch, Mặt kính cảm ứng: Kính cường lực Corning Gorilla Glass 5, Camera sau: Chính 48 MP & Phụ 13 MP, 8 MP, 2 MP, Camera trước: 16 MP, Ram: 8 GB, Bộ nhớ trong: 128 GB, Hổ trợ bộ nhớ ngoài tối đa 256GB Dung lượng pin 4025 mAh",
-                            ProductImage = "oppoA91.jpg",
-                            ProductName = "OPPO A91",
-                            ProductPrice = 5990000.0,
-                            ProductQuantity = 100
-                        },
-                        new
-                        {
-                            ProductId = 18,
-                            CategoryId = 5,
-                            CreateDate = new DateTime(2020, 7, 18, 14, 27, 48, 600, DateTimeKind.Local).AddTicks(1341),
-                            Descriptions = "Công nghệ màn hình: AMOLED, Độ phân giải: 2K+ (1440 x 3168 Pixels), Màn hình rộng: 6.78 inch, Mặt kính cảm ứng: Kính cường lực Corning Gorilla Glass 6, Camera sau: Chính 48 MP & Phụ 13 MP, 12 MP, Camera trước: 32 MP, Ram: 12 GB, Bộ nhớ trong: 256 GB, Không hổ trợ bộ nhớ ngoàiDung lượng pin 4200 mAh",
-                            ProductImage = "oppoFindx2.png",
-                            ProductName = "OPPO Find X2",
-                            ProductPrice = 23990000.0,
-                            ProductQuantity = 100
-                        },
-                        new
-                        {
-                            ProductId = 19,
-                            CategoryId = 5,
-                            CreateDate = new DateTime(2020, 7, 18, 14, 27, 48, 600, DateTimeKind.Local).AddTicks(1343),
-                            Descriptions = "Công nghệ màn hình: IPS LCD, Độ phân giải: HD+ (720 x 1600 Pixels), Màn hình rộng: 6.5 inch, Mặt kính cảm ứng: Mặt kính cong 2.5D, Camera sau: Chính 12 MP & Phụ 2 MP, 2 MP, Camera trước: 8 MP, Ram: 6 GB, Bộ nhớ trong: 128 GB, Hổ trợ bộ nhớ ngoài tối đa 256GBDung lượng pin 4230 mAh",
-                            ProductImage = "oppoA31.png",
-                            ProductName = "OPPO A31",
-                            ProductPrice = 4990000.0,
-                            ProductQuantity = 100
-                        },
-                        new
-                        {
-                            ProductId = 20,
-                            CategoryId = 4,
-                            CreateDate = new DateTime(2020, 7, 18, 14, 27, 48, 600, DateTimeKind.Local).AddTicks(1344),
-                            Descriptions = "Công nghệ màn hình: 	TFT, Độ phân giải: HD+ (720 x 1520 Pixels), Màn hình rộng: 6.2 inch, Mặt kính cảm ứng: Mặt kính cong 2.5D, Camera sau: Chính 13 MP & Phụ 2 MP, Camera trước: 5 MP, Ram: 2 GB, Bộ nhớ trong: 32 GB, Hổ trợ bộ nhớ ngoài tối đa 512GBDung lượng pin 4000 mAh",
-                            ProductImage = "oppoA31.png",
-                            ProductName = "Nokia 2.3",
-                            ProductPrice = 2290000.0,
-                            ProductQuantity = 100
-                        },
-                        new
-                        {
-                            ProductId = 21,
-                            CategoryId = 2,
-                            CreateDate = new DateTime(2020, 7, 18, 14, 27, 48, 600, DateTimeKind.Local).AddTicks(1345),
-                            Descriptions = "Công nghệ màn hình: 	TFT, Độ phân giải: HD+ (720 x 1520 Pixels), Màn hình rộng: 6.2 inch, Mặt kính cảm ứng: Mặt kính cong 2.5D, Camera sau: Chính 13 MP & Phụ 2 MP, Camera trước: 5 MP, Ram: 2 GB, Bộ nhớ trong: 32 GB, Hổ trợ bộ nhớ ngoài tối đa 512GBDung lượng pin 4000 mAh",
-                            ProductImage = "ssA21.png",
-                            ProductName = "SamSung Galaxy A21s",
-                            ProductPrice = 5690000.0,
-                            ProductQuantity = 100
-                        },
-                        new
-                        {
-                            ProductId = 22,
-                            CategoryId = 2,
-                            CreateDate = new DateTime(2020, 7, 18, 14, 27, 48, 600, DateTimeKind.Local).AddTicks(1347),
-                            Descriptions = "Công nghệ màn hình: 	TFT, Độ phân giải: HD+ (720 x 1520 Pixels), Màn hình rộng: 6.2 inch, Mặt kính cảm ứng: Mặt kính cong 2.5D, Camera sau: Chính 13 MP & Phụ 2 MP, Camera trước: 5 MP, Ram: 2 GB, Bộ nhớ trong: 32 GB, Hổ trợ bộ nhớ ngoài tối đa 512GBDung lượng pin 4000 mAh",
-                            ProductImage = "ssA80.png",
-                            ProductName = "SamSung Galaxy A80",
-                            ProductPrice = 8990000.0,
-                            ProductQuantity = 100
-                        },
-                        new
-                        {
-                            ProductId = 23,
-                            CategoryId = 2,
-                            CreateDate = new DateTime(2020, 7, 18, 14, 27, 48, 600, DateTimeKind.Local).AddTicks(1348),
-                            Descriptions = "Công nghệ màn hình: 	TFT, Độ phân giải: HD+ (720 x 1520 Pixels), Màn hình rộng: 6.2 inch, Mặt kính cảm ứng: Mặt kính cong 2.5D, Camera sau: Chính 13 MP & Phụ 2 MP, Camera trước: 5 MP, Ram: 2 GB, Bộ nhớ trong: 32 GB, Hổ trợ bộ nhớ ngoài tối đa 512GBDung lượng pin 4000 mAh",
-                            ProductImage = "ssZFlip.png",
-                            ProductName = "SamSung Galaxy Z Flip",
-                            ProductPrice = 36000000.0,
+                            CreateDate = new DateTime(2020, 11, 23, 13, 12, 31, 703, DateTimeKind.Local).AddTicks(3307),
+                            Descriptions = "COUPLE TAY DÀI, Diện áo thun couple đã trở thành xu hướng của giới trẻ hiện đại, Đặc biệt áo thun tay dài raplan, màu sắc tươi mới, Thiết kế Unisex, dễ dàng mix với nhiều trang phục khác nhau, Chất liệu cotton 2 chiều, thoáng mát, bề mặt mịn đẹp ",
+                            ProductImage = "15.jpg",
+                            ProductName = "Áo Thun Cổ Trụ TC Thiết Kế F01",
+                            ProductPrice = 250000.0,
                             ProductQuantity = 100
                         });
                 });
